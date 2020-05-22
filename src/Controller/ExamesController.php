@@ -23,11 +23,15 @@ class ExamesController extends BaseController
     */
     public function atualizarEntidadeExistente(
         $entidadeExistente, $entidadeEnviada){
-
+  
             $entidadeExistente
             ->setDescricao($entidadeEnviada->getDescricao())
             ->setPreco($entidadeEnviada->getPreco())
             ->setDiasResultado($entidadeEnviada->getDiasResultado());
+    }
+
+    public function teste(){
+        
     }
        
 }
