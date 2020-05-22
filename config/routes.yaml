@@ -1,0 +1,291 @@
+# ROTAS CLASSE usuario
+valida_usuario:
+  path: /usuarios/{usuario}/{senha}
+  controller: App\Controller\UsuariosController::validarLogin
+  methods:
+    - GET
+
+usuarios:
+  path: /usuarios
+  controller: App\Controller\UsuariosController::buscarTodos
+  methods:
+    - GET
+
+usuario:
+  path: /usuarios/{id}
+  controller: App\Controller\UsuariosController::buscarPorCodigo
+  methods:
+    - GET
+
+remove_usuario:
+  path: /usuarios/{id}
+  controller: App\Controller\UsuariosController::remove
+  methods:
+    - DELETE
+
+criar_usuario:
+  path: /usuarios
+  controller: App\Controller\UsuariosController::novo
+  methods:
+    - POST
+
+atualiza_usuario:
+  path: /usuarios/{id}
+  controller: App\Controller\UsuariosController::atualiza
+  methods:
+    - PUT
+
+# ROTAS CLASSE ordemServicoExame
+ordemServicoExames:
+  path: /ordemServicoExames
+  controller: App\Controller\OrdemServicoExamesController::buscarTodos
+  methods:
+    - GET
+
+ordemServicoExame:
+  path: /ordemServicoExames/{id}
+  controller: App\Controller\OrdemServicoExamesController::buscarPorCodigo
+  methods:
+    - GET
+
+ordemServicoExames_OS:
+  path: /ordemServicoExames/OS/{id}
+  controller: App\Controller\OrdemServicoExamesController::buscarTodosOS
+  methods:
+    - GET    
+
+remove_ordemServicoExame:
+  path: /ordemServicoExames/{id}
+  controller: App\Controller\OrdemServicoExamesController::remove
+  methods:
+    - DELETE
+
+criar_ordemServicoExame:
+  path: /ordemServicoExames
+  controller: App\Controller\OrdemServicoExamesController::novo
+  methods:
+    - POST
+
+atualiza_ordemServicoExame:
+  path: /ordemServicoExames/{id}
+  controller: App\Controller\OrdemServicoExamesController::atualiza
+  methods:
+    - PUT
+
+# ROTAS CLASSE postoColeta
+postoColetas:
+  path: /postoColetas
+  controller: App\Controller\PostoColetasController::buscarTodos
+  methods:
+    - GET
+
+postoColeta:
+  path: /postoColetas/{id}
+  controller: App\Controller\PostoColetasController::buscarPorCodigo
+  methods:
+    - GET
+
+remove_postoColeta:
+  path: /postoColetas/{id}
+  controller: App\Controller\PostoColetasController::remove
+  methods:
+    - DELETE
+
+criar_postoColeta:
+  path: /postoColetas
+  controller: App\Controller\PostoColetasController::novo
+  methods:
+    - POST
+
+atualiza_postoColeta:
+  path: /postoColetas/{id}
+  controller: App\Controller\PostoColetasController::atualiza
+  methods:
+    - PUT
+
+
+# ROTAS CLASSE OrdemServico
+OrdemServicos:
+  path: /ordemServicos
+  controller: App\Controller\OrdemServicosController::buscarTodos
+  methods:
+    - GET
+
+OrdemServico:
+  path: /ordemServicos/{id}
+  controller: App\Controller\OrdemServicosController::buscarPorCodigo
+  methods:
+    - GET
+
+remove_OrdemServico:
+  path: /ordemServicos/{id}
+  controller: App\Controller\OrdemServicosController::remove
+  methods:
+    - DELETE
+
+criar_OrdemServico:
+  path: /ordemServicos
+  controller: App\Controller\OrdemServicosController::novo
+  methods:
+    - POST
+
+atualiza_OrdemServico:
+  path: /ordemServicos/{id}
+  controller: App\Controller\OrdemServicosController::atualiza
+  methods:
+    - PUT
+
+# ROTAS CLASSE Exame
+Exames:
+  path: /exames
+  controller: App\Controller\ExamesController::buscarTodos
+  methods:
+    - GET
+
+Exame:
+  path: /exames/{id}
+  controller: App\Controller\ExamesController::buscarPorCodigo
+  methods:
+    - GET
+
+remove_Exame:
+  path: /exames/{id}
+  controller: App\Controller\ExamesController::remove
+  methods:
+    - DELETE
+
+criar_Exame:
+  path: /exames
+  controller: App\Controller\ExamesController::novo
+  methods:
+    - POST
+
+atualiza_Exame:
+  path: /exames/{id}
+  controller: App\Controller\ExamesController::atualiza
+  methods:
+    - PUT
+
+# ROTAS CLASSE Especialidade
+Especialidades:
+  path: /especialidades
+  controller: App\Controller\EspecialidadesController::buscarTodos
+  methods:
+    - GET
+
+Especialidade:
+  path: /especialidades/{id}
+  controller: App\Controller\EspecialidadesController::buscarPorCodigo
+  methods:
+    - GET
+
+remove_Especialidade:
+  path: /especialidades/{id}
+  controller: App\Controller\EspecialidadesController::remove
+  methods:
+    - DELETE
+
+criar_Especialidade:
+  path: /especialidades
+  controller: App\Controller\EspecialidadesController::novo
+  methods:
+    - POST
+
+atualiza_Especialidade:
+  path: /especialidades/{id}
+  controller: App\Controller\EspecialidadesController::atualiza
+  methods:
+    - PUT
+
+# ROTAS CLASSE Medico
+Medicos:
+  path: /medicos
+  controller: App\Controller\MedicosController::buscarTodos
+  methods:
+    - GET
+
+Medico:
+  path: /medicos/{id}
+  controller: App\Controller\MedicosController::buscarPorCodigo
+  methods:
+    - GET
+
+remove_Medico:
+  path: /medicos/{id}
+  controller: App\Controller\MedicosController::remove
+  methods:
+    - DELETE
+
+criar_Medico:
+  path: /medicos
+  controller: App\Controller\MedicosController::novo
+  methods:
+    - POST
+
+atualiza_Medico:
+  path: /medicos/{id}
+  controller: App\Controller\MedicosController::atualiza
+  methods:
+    - PUT
+
+# ROTAS CLASSE Paciente
+Pacientes:
+  path: /pacientes
+  controller: App\Controller\PacientesController::buscarTodos
+  methods:
+    - GET
+
+Paciente:
+  path: /pacientes/{id}
+  controller: App\Controller\PacientesController::buscarPorCodigo
+  methods:
+    - GET
+
+remove_Paciente:
+  path: /pacientes/{id}
+  controller: App\Controller\PacientesController::remove
+  methods:
+    - DELETE
+
+criar_Paciente:
+  path: /pacientes
+  controller: App\Controller\PacientesController::novo
+  methods:
+    - POST
+
+atualiza_Paciente:
+  path: /pacientes/{id}
+  controller: App\Controller\PacientesController::atualiza
+  methods:
+    - PUT
+
+# ROTAS CLASSE CONVENIO
+convenios:
+  path: /convenios
+  controller: App\Controller\ConveniosController::buscarTodos
+  methods:
+    - GET
+
+convenio:
+  path: /convenios/{id}
+  controller: App\Controller\ConveniosController::buscarPorCodigo
+  methods:
+    - GET
+
+remove_convenio:
+  path: /convenios/{id}
+  controller: App\Controller\ConveniosController::remove
+  methods:
+    - DELETE
+
+criar_convenio:
+  path: /convenios
+  controller: App\Controller\ConveniosController::novo
+  methods:
+    - POST
+
+atualiza_convenio:
+  path: /convenios/{id}
+  controller: App\Controller\ConveniosController::atualiza
+  methods:
+    - PUT
